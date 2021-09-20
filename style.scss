@@ -1,0 +1,157 @@
+@import './variables';
+
+
+
+body {
+      font: 100% "Space Mono", monospace;
+    color: $grey;
+    margin: 0;
+    padding: 0;
+    background-color:$white;
+    overflow-x: hidden;
+
+    header{
+    h1{
+        color: $pink;
+         text-align: center;
+    }
+}
+
+
+main{
+    padding: 0 1em;
+padding-top: 0;
+padding-bottom: 0;
+    article {
+    display: flex;
+    flex-wrap: wrap;
+    section{
+           flex-grow: 1;
+    flex-basis: 45%;
+    border: 1px $light-grey solid;
+    @mixin box-shadow {
+        -webkit-box-shadow: 10px 10px 15px -4px $grey;
+    -moz-box-shadow: 10px 10px 15px -4px $grey;
+    box-shadow: 10px 10px 15px -4px $grey;
+    }
+    
+    padding: $general-padding;
+    margin: 16px;
+    clear: both;
+    overflow: auto;
+    box-sizing: border-box;
+    h2{
+        color: $pink;
+    }
+    
+
+        @for $gradient from rgb(112, 39, 160) to rgb(245, 111, 173){
+ .advantages#{$gradient} {
+     color: $gradient;
+ }
+                
+            
+        }
+    
+
+    }
+    section{
+         h2{
+        color: $pink;
+    }
+    section{
+        code{
+             background: $black;
+    border: 1px solid $grey;
+    color: $light-grey;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+        }
+        code{
+               float: right;
+    width: 40%;
+        }
+    }
+    
+    }
+    section{
+        h2{
+           color: $pink; 
+        }
+    }
+    section{
+        code{
+            float: left;
+    width: 40%;
+        }
+        code{
+            float: right;
+    width: 40%;
+        }
+    }
+    section{
+        h2{
+            color: $pink; 
+        }
+    }
+    section{
+        h2{
+            color: $pink; 
+        }
+    }
+    section{
+        code{
+             float: left;
+    width: 40%;
+        }
+        code{
+             float: right;
+    width: 40%;
+        }
+    }
+}
+div{
+    padding: $general-padding;
+    .success {
+    background-color:$green;
+}
+.error {
+    background-color: $red;
+       &:hover{
+background-color: $green;
+    }
+}
+
+.warning {
+    background-color:$orange;
+}
+.success{
+     border: 1px solid $light-grey;
+    padding: $general-padding;
+    color:$white;
+}
+.error, .warning{
+    @extend .success 
+}
+
+
+ 
+}
+}
+footer{
+    h3{
+        color: $pink;
+        padding: ($general-padding*2);
+    }
+}
+
+
+}
